@@ -1,29 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "ait-example-addon",
+  "id": "boxmod",
   "version": "${version}",
-  "name": "Example AIT Addon",
+  "name": "Box Mod",
   "description": "",
   "authors": [],
   "contact": {
-    "repo": "https://github.com/pavatus/ait-example-addon"
+    "repo": "https://github.com/duzo/ait_boxmod"
   },
   "license": "MIT",
-  "icon": "assets/ait-example-addon/icon.png",
+  "icon": "assets/boxmod/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.aitexampleaddon.client.ExampleAddonModClient"
+      "dev.duzo.boxmod.client.BoxModClient"
     ],
     "main": [
-      "com.aitexampleaddon.ExampleAddonMod"
-    ],
-    "ait-main": [
-      "com.aitexampleaddon.ait.ExampleAITAddon"
+      "dev.duzo.boxmod.BoxMod"
     ]
   },
   "mixins": [
-    "ait-example-addon.mixins.json"
+    "boxmod.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
